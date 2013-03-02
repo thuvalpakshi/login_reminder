@@ -24,9 +24,10 @@ $english = array(
 'login_reminder:members' => 'Members with Inactive Message Counter',
 'admin:users:deletion' => 'Terminating Members',
 
-'login_reminder:info' => 'Thank you very much for downloading Login Reminder. Your Comments and Suggestions are always welcome and you are always free to contact Me for any Support or Modification through My <a href="http://satheesh.anushaktinagar.net" target="_blank"><font color="blue"><b>Personal website</b></font></a><br /><br />Just enabling this plugin will not work. You must setup a cron job in your site control panel for fifteen minutes and weekly. You can use <b>curl yoursite.com/cron/fifteenmin >/dev/null 2>&1</b> or <b>curl yoursite.com/cron/weekly</b> in the command field',
+'login_reminder:info' => 'Thank you very much for downloading Login Reminder. Your Comments and Suggestions are always welcome and you are always free to contact Me for any Support or Modification through My <a href="http://satheesh.anushaktinagar.net" target="_blank"><font color="blue"><b>Personal website</b></font></a><br /><br />Just enabling this plugin will not work. You must setup a cron job in your site control panel for fifteen minutes and weekly. You can use <b>curl yoursite.com/cron/fifteenmin</b> or <b>curl yoursite.com/cron/weekly</b> in the command field',
 
 'login_reminder:login_reminder' => 'Run a fifteen minutes cron to send Login Reminder to Members',
+'login_reminder:login_reminder_week' => 'Run a weekly cron to swith ON the sending of Login Reminder to Members',
 'login_reminder:remindertime' => 'Send <b>Login Reminder</b> to Members whos last login was on',
 'login_reminder:terminationtime' => 'Send <b>Termination Reminder</b> to Members whos last login was on',
 'login_reminder:terminationcounter' => 'Select the number of Messages to be send before Termination',

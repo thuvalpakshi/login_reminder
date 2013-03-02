@@ -18,8 +18,10 @@ function login_reminder_init(){
 
 //Function to switch on Login Reminders weekly
 function login_reminder_on_cron($hook, $entity_type, $returnvalue, $params){
+if (elgg_get_plugin_setting('reminder_week', 'login_reminder') == "yes"){
     elgg_set_plugin_setting('reminder', 'yes', 'login_reminder');
     return $returnvalue.elgg_echo("login_reminder:login_reminder_on_cron");
+}
 }
 
 //Check logged in users for a inactive message tag, if yes remove it 

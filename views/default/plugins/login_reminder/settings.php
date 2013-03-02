@@ -7,6 +7,9 @@
 if (!isset($vars['entity']->reminder)) {
 	$vars['entity']->reminder = 'no';
 }
+if (!isset($vars['entity']->reminder_week)) {
+	$vars['entity']->reminder_week = 'no';
+}
 if (!isset($vars['entity']->counter)) {
 	$vars['entity']->counter = '0';
 }
@@ -36,6 +39,15 @@ echo elgg_view('input/dropdown', array(
 echo elgg_view('input/text', array(
         'name' => 'params[counter]',
         'value' => $vars['entity']->counter,
+        ));
+echo "<br />".elgg_echo('login_reminder:login_reminder_week')." : ";
+echo elgg_view('input/dropdown', array(
+        'name' => 'params[reminder_week]',
+        'options_values' => array(
+                'yes' => elgg_echo('login_reminder:yes'),
+                'no' => elgg_echo('login_reminder:no'),
+        ),
+        'value' => $vars['entity']->reminder_week,
         ));
 echo "<br />".elgg_echo('login_reminder:remindertime')." : ";
 echo elgg_view('input/dropdown', array(
