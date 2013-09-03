@@ -8,7 +8,7 @@
 
 //Function to switch on Login Reminders weekly
 function login_reminder_on_cron($hook, $entity_type, $returnvalue, $params){
-if (elgg_get_plugin_setting('reminder_week', 'login_reminder') != "yes"){
+if (elgg_get_plugin_setting('reminder_week', 'login_reminder') == "no"){
     elgg_set_plugin_setting('reminder', 'yes', 'login_reminder');
     return $returnvalue.elgg_echo("login_reminder:login_reminder_on_cron");
 }else{
@@ -109,8 +109,10 @@ function login_reminder_send_cron($hook, $entity_type, $returnvalue, $params) {
         elgg_set_plugin_setting('counter', '0', 'login_reminder');
         elgg_set_plugin_setting('reminder', 'no', 'login_reminder');
         }
-        return $returnvalue.elgg_echo("login_reminder:login_reminder_send_cron_true");
+        $result = elgg_echo("login_reminder:login_reminder_send_cron_true");
+    }else{
+        $result = elgg_echo("login_reminder:login_reminder_send_cron_false");
     }
     elgg_set_ignore_access(false);
-    return $returnvalue.elgg_echo("login_reminder:login_reminder_send_cron_false");
+    return $returnvalue.$result;
 }
