@@ -34,6 +34,7 @@ $english = array(
 'login_reminder:deletion' => 'Allow <b>Deletion</b> of inactive members',
 'login_reminder:send' => 'Total number of Batches processed (10 users per batch)',   
 'login_reminder:login_reminder_on_cron' =>'Login Reminder Sending Swithched ON',
+'login_reminder:login_reminder_off_cron' =>'Not sending any Login Reminder Messages',
 'login_reminder:login_reminder_send_cron_false' =>'No members to send Login Reminder. Or Reminder setting is Off',
 'login_reminder:login_reminder_send_cron_true' =>'Login Reminder was send to some Members',
     
