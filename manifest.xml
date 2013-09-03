@@ -2,7 +2,7 @@
 <plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
 	<name>Login Reminder</name>
 	<author>Satheesh PM, BARC, Mumbai</author>
-	<version>1.1</version>
+	<version>1.2</version>
 	<blurb>Login Reminder</blurb>
 	<description>This will send login reminders to users who were not visited the site for a certain period, configurable in settings page. Also there is option to delete the members automatically if not visiting the site after a certain time</description>
 	<website>http://satheesh.anushaktinagar.net/</website>
